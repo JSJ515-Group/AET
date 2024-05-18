@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ubuntu@172.16.10.22:22 password" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="ubuntu@172.16.10.22:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mnt/sda/wen/biFPN_FRSKD/resnet20" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ubuntu@172.16.10.22:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mnt/sda/wen/item1/0_FFL-pytorch" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

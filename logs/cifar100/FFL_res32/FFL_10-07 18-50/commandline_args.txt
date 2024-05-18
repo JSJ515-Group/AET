@@ -1,0 +1,19 @@
+{
+  "text": "log.txt",
+  "exp_name": "cifar100/FFL_res32",
+  "log_time": "1",
+  "lr": 0.1,
+  "resume_epoch": 0,
+  "epoch": 300,
+  "decay_epoch": [
+    150,
+    225
+  ],
+  "w_decay": 0.0001,
+  "cu_num": "0",
+  "seed": "1",
+  "load_pretrained": "models/ResNet82.pth",
+  "save_model": "ckpt.t7",
+  "depth": 32,
+  "consistency_rampup": 80
+}
