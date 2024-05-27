@@ -1,35 +1,9 @@
 # Feature Fusion for Online Mutual Knowledge Distillation
 
-This repository is the official implementation of [Feature Fusion for Online Mutual Knowledge Distillation (FFL)](https://arxiv.org/abs/1904.09058). 
-The source code is for reproducing the results of Table 1 of the original paper.
+Abstract: Online Knowledge Distillation (OKD) has emerged as a powerful technique for model compression, eliminating the need for pre-trained teachers in traditional methods. While recent advancements in feature fusion have further improved OKD's capabilities, existing approaches solely focus on final-layer fusion, potentially hindering the effectiveness of the fused classifier. In this work, we propose a novel Auxiliary and Embedded Teacher (AET) approach to tackle these challenges. AET addresses the critical issues of feature fusion position selection and potential performance degradation after fusion. We introduce embedded teachers, formed by combining multiple mid-level sub-networks, to promote mutual learning among student networks. Additionally, auxiliary teachers provide enriched information and guide the fusion classifier, ultimately enhancing overall performance. Extensive evaluations on four benchmark datasets (CIFAR-10/100, CINIC-10, and ImageNet2012) demonstrate the superiority of the proposed AET approach. Code is available: https://github.com/JSJ515-Group/AET
+
+![image](https://github.com/JSJ515-Group/AET/assets/113502037/fc9ca204-2c81-44d3-a6e6-63986c2548d1)
+![image](https://github.com/JSJ515-Group/AET/assets/113502037/326bd806-5763-465a-abee-8d2a40218361)
 
 
-## Requirements
-
-To install requirements using [environment.yml](environment.yml) refer to the [documentation.](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
-
-
-## Training
-
-[train_FFL.py](train_FFL.py) is the code for training FFL  **with Mutual Knowledge Distillation (MKD)**. To train the model(s) in the paper, run this command:
-
-```train
-#The results from the original paper can be reproducd by running : 
-python train_FFL.py  --lr 0.1 --cu_num 0 --depth 32
-```
-
-
-## Citation
-Please refer to the following citation if this repository is useful for your research.
-
-### Bibtex:
-
-```
-@article{kim2019feature,
-  title={Feature fusion for online mutual knowledge distillation},
-  author={Kim, Jangho and Hyun, Minsung and Chung, Inseop and Kwak, Nojun},
-  journal={arXiv preprint arXiv:1904.09058},
-  year={2019}
-}
-```
 
